@@ -26,4 +26,12 @@ let image = document.querySelector("img");
 
 console.log(image.getAttribute("src"));
 
-image.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/e/e2/Disc_gol");
+image.setAttribute("src", "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Lenskart_graphic_poster.jpg/1920px-Lenskart_graphic_poster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail");
+
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+})
+                
