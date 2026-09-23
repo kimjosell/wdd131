@@ -1,3 +1,34 @@
+// 1. Funyions
+myFunctionName("DAN!!");
+
+function myFunctionName(name)
+{
+    console.log("Your name is " + name);
+    console.log(`Your name is ${name}, and that's just great!`)
+    let lastName = "Warner";
+}
+
+//this will break!! outer scope reference
+//console.log(lastName);
+
+//Call "invoke" the function
+myFunctionName("kim");
+myFunctionName("James");
+
+// 2. Event listeners
+    //Retreive something from the DOM
+let select = document.querySelector("#theme-select");
+//register an event listener
+//Event we are listening for, the function to call  when that event occurs
+select.addEventListener("change", handleEvent);
+
+function handleEvent(event) {
+    console.log(event);
+    console.log(event.target.value);
+}
+// 3. If statements
+
+
 
 let selectElem = document.querySelector('#theme-select');
 let pageContent = document.querySelector('body');
