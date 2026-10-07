@@ -22,10 +22,26 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
+
+nav {
+    display: none;
+    flex-direction: column;
+}
 nav a {
     padding: 20px;
     color: black;
     display: none;
+}
+nav.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav.open a {
+    display: block;
+    border-top: solid 1px #616061;
+    width: 90%;
+    text-align: center;
 }
 nav a:hover {
     text-decoration: none;
@@ -41,24 +57,36 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 footer {
     text-align: center;
 }
 
+.change .bar1 {
+  transform: translateY(9px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translateY(-9px) rotate(45deg);
+}
+          
+
 
 @media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
     nav a {
         display: inline;
     }
 
     section {
         max-width: 40%;
-    }
-
-    nav {
-        display: flex;
-        justify-content: right;
     }
 
     main {
