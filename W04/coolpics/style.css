@@ -11,11 +11,19 @@ header {
 a {
     color: white;
     size: 2em;
+    padding: 5px;
 }
 
 .menu-pc { 
     display: none;
 }
+
+.display-mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 
 body {
     background-color: rgb(215, 215, 215);
@@ -88,7 +96,6 @@ dialog {
     img {
         margin: 30px;
     }
-
     .menu-pc {
         width: 100%;
         display: flex;

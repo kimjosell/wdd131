@@ -26,4 +26,15 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
+
+function openMenu() {
+    const menu = document.querySelector("#display-menu");
+
+    menu.classList.toggle("display-mobile-menu");
+}
+
+const button = document.querySelector("#menu-button");
+button.addEventListener("click", openMenu);
+
+
           
