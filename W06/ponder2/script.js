@@ -43,8 +43,6 @@ const movies = [
     ];
 
 
-    let movielist = document.querySelector(".movie-list");
-
     movies.forEach(movie => {
 
         // Code for going through each movie and creating content for that movie

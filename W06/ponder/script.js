@@ -1,5 +1,7 @@
 let courses = ["Course1", "Course2", "Course3"];
 
+courses.push
+
 console.log(courses[4]);
 let courseAndGPA = [
     {
@@ -55,5 +57,5 @@ const students = [
     {last: 'Masa', first:'Manny'},
     {last: 'Tanda', first: 'Tamanda'}
 ];
-          
 
+const car = new Array("")
