@@ -1,0 +1,138 @@
+
+
+
+#logo_header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#logo {
+    width: 5px;
+    height: auto;
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 3em;
+}
+#search_section {
+    display: flex;
+    width: 100%;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+#search-bar{
+    width: 100%;
+    font-size: 17px;
+}
+#logo {
+    width: 100px;
+}
+
+#search-image {
+    width: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 20px;
+}
+#image-section{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#image-section img {
+    text-align: center;
+    width: 100%;
+}
+
+#description-section label {
+    border: solid black 2px;
+    font-size: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 204, 204);
+}
+
+#title {
+    color: rgb(0, 221, 255);
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+#description {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    width: 70px;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+
+    section {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    #title {
+        font-size: 4em;
+    }
+
+    #image-section {
+        width: 50%;
+    }
+    #description-section {
+        width: 50%;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #description-section label {
+        align-self: start;
+    }
+
+    #description {
+        display: block;
+        font-size: 20px;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+}
